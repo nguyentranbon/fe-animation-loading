@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer{
+    background: #262626;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bolder;
+
+}
+.menu-right{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        background: white;
+        li{
+           position: relative;
+           width: 60px;
+           height: 60px;
+           line-height: 60px;
+           margin: 0;
+           padding: 0;
+           cursor: pointer;
+           background: white;
+            
+            .menu-text{
+                transition: .5s;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            
+            }
+            .content {
+                transition: .5s;
+                background-color: #1b1b1b;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                a{
+                    color: white;
+                }
+              }
+        }
+        li:nth-child(1){
+            .menu-text{
+                background-image: url(../images/sidemenu-icons.png);
+            }
+        }
+        li:nth-child(1):hover{
+            .menu-text{
+                background-position: 0 -60px;
+            }
+        }
+        li:nth-child(2){
+            .menu-text{
+                background-image: url(../images/sidemenu-icons.png);
+                background-position: 0 -120px;
+            }
+        }
+        li:nth-child(2):hover{
+            .menu-text{
+                background-position: 0 -180px;
+            }
+        }
+        li:nth-child(3){
+            .menu-text{
+                background-image: url(../images/sidemenu-icons.png);
+                background-position: 0 -240px;
+            }
+        }
+        li:nth-child(3):hover{
+            .menu-text{
+                background-position: 0 -300px;
+            }
+        }
+        li:nth-child(4){
+            .menu-text{
+                background-image: url(../images/sidemenu-icons.png);
+                background-position: 0 -360px;
+            }
+        }
+        li:nth-child(4):hover{
+            .menu-text{
+                background-position: 0 -420px;
+            }
+        }
+        li:nth-child(5){
+            .menu-text{
+                background-image: url(../images/sidemenu-icons.png);
+                background-position: 0 -480px;
+            }
+        }
+        li:nth-child(5):hover{
+            .menu-text{
+                background-position: 0 -540px;
+            }
+        }
+        li:hover{
+            .content {
+                transform: translateX(-110%);
+              }
+        }
+    }
+}
+
+.card img{
+    cursor: zoom-in;
+}
+.loader{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: #fff;
+}
